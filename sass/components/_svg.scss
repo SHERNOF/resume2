@@ -1,0 +1,259 @@
+.skill {
+  // 5
+  min-height: auto;
+  @include respond(phone) {
+  }
+
+  @include respond(tab) {
+  }
+
+  @include respond(tabLand) {
+  }
+
+  & .mainBox {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+
+    & div:nth-child(2) {
+      display: grid;
+      justify-content: center;
+    }
+
+    .title {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $font;
+      h5 {
+        color: $font;
+      }
+    }
+
+    & .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: stretch;
+      align-content: center;
+      margin: 1rem 1rem;
+      width: auto;
+      padding-left: 1.5rem;
+      grid-gap: 1rem;
+
+      @include respond(tab) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @include respond(phone) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 2rem;
+      }
+
+      // @include respond(phoneS) {
+      //   display: grid;
+      //   grid-template-columns: 1fr 1fr;
+      //   padding: 0;
+      // }
+
+      & .card {
+        position: relative;
+        width: 7rem;
+        background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+        border-radius: 0.4rem;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s;
+
+        @include respond(phone) {
+          width: 8rem;
+          height: 8rem;
+          text-align: center;
+          overflow: hidden;
+          transition: 0.5s;
+        }
+
+        // @include respond(phoneS) {
+        //   width: 7rem;
+        //   height: 7rem;
+        //   // padding: 2rem 0;
+        // }
+
+        &:hover {
+          //  7
+          transform: translateY(-1rem);
+          box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5);
+        }
+
+        &:before {
+          //  8
+          content: "";
+          position: absolute;
+          top: 120%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.03);
+          pointer-events: none;
+          z-index: 1;
+        }
+
+        .box {
+          & .text {
+            position: relative;
+            color: #777;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            transition: 0.5s;
+            margin: 0.5rem 0;
+            color: font;
+            @include respond(phoneS) {
+            }
+          }
+
+          & .percent {
+            //   9
+            position: relative;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 95%;
+            // box-shadow: inset 0 0 125px #000;
+            // background: #222;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+
+            @include respond(phoneS) {
+              box-shadow: none;
+              background: none;
+            }
+
+            @include respond(phone) {
+              box-shadow: none;
+              background: none;
+            }
+
+            @include respond(tab) {
+              box-shadow: none;
+              background: none;
+            }
+
+            & .number {
+              position: absolute;
+              top: -7%;
+              line-height: 40;
+              left: -18%;
+              width: 125%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+            }
+
+            & h3 {
+              font-size: 0.8rem;
+              line-height: 2.5;
+              transition: 0.5s;
+              color: $font;
+
+              & span {
+                font-size: 0.8rem;
+                color: $font;
+              }
+            }
+
+            & svg {
+              //   1
+              width: 7rem;
+              height: 70rem;
+              // border: 1px solid red;
+
+              & circle {
+                //   2
+                width: 100%;
+                height: 100%;
+                fill: none;
+                stroke: #191919;
+                stroke-linecap: square;
+                stroke-width: 1;
+                transform: translate(0.5rem, 0.5rem);
+              }
+            }
+          }
+        }
+
+        &:hover .percent .number h3 {
+          color: #fff;
+          font-size: 1rem;
+        }
+
+        &:hover .percent .number h3 span {
+          color: #fff;
+          font-size: 1rem;
+        }
+
+        .card:hover .text {
+          color: #fff;
+          font-size: 1rem;
+        }
+      }
+
+      & .card svg circle:nth-child(2) {
+        //   3
+        stroke-dasharray: 124;
+        stroke-dashoffset: 62;
+      }
+
+      & .card:nth-child(1) svg circle:nth-child(2) {
+        // 4
+        stroke-dashoffset: calc(125 - (125 * 95) / 125);
+        stroke: $primary-color;
+      }
+      & .card:nth-child(2) svg circle:nth-child(2) {
+        // 4
+        stroke: $primary-color;
+        stroke-dashoffset: calc(125 - (125 * 95) / 125);
+      }
+      & .card:nth-child(3) svg circle:nth-child(2) {
+        // 4
+        stroke: $primary-color;
+        stroke-dashoffset: calc(125 - (125 * 95) / 125);
+      }
+
+      & .card:nth-child(4) svg circle:nth-child(2) {
+        // 4
+        stroke-dashoffset: calc(125 - (125 * 95) / 125);
+        stroke: #00ff43;
+      }
+      & .card:nth-child(5) svg circle:nth-child(2) {
+        // 4
+        stroke: #00ff43;
+        stroke-dashoffset: calc(125 - (125 * 95) / 125);
+      }
+      & .card:nth-child(6) svg circle:nth-child(2) {
+        // 4
+        stroke: #00ff43;
+        stroke-dashoffset: calc(125 - (125 * 95) / 125);
+      }
+
+      & .card:nth-child(7) svg circle:nth-child(2) {
+        // 4
+        stroke-dashoffset: calc(125 - (125 * 40) / 125);
+        stroke: hotpink;
+      }
+      & .card:nth-child(8) svg circle:nth-child(2) {
+        // 4
+        stroke: hotpink;
+        stroke-dashoffset: calc(125 - (125 * 40) / 125);
+      }
+      & .card:nth-child(9) svg circle:nth-child(2) {
+        // 4
+        stroke: hotpink;
+        stroke-dashoffset: calc(125 - (125 * 40) / 125);
+      }
+    }
+  }
+}

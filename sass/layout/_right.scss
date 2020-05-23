@@ -1,0 +1,189 @@
+#right {
+  // border: 1px solid white;
+  // background: rgb(233, 230, 230);
+  padding: 2rem 4rem;
+  // background: linear-gradient(to left $background, white);
+  // background: linear-gradient(to bottom, $background, rgba(86, 86, 87, 0.507));
+  color: $font;
+  min-height: 120rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid $font;
+  border-right: 1px solid $font;
+  border-top: 1px solid $font;
+
+  @include respond(phoneS) {
+    padding: 0.5rem 1rem;
+  }
+
+  & .name {
+    height: 17rem;
+    color: $primary-color;
+    h3 {
+      font-size: 1.8rem;
+      color: $primary-color;
+    }
+
+    @include respond(phone) {
+      height: 20rem;
+
+      h1 {
+        padding-top: 4rem;
+        font-size: 4rem;
+      }
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @include respond(phoneS) {
+      height: 17.5rem;
+
+      h1 {
+        padding-top: 4rem;
+        font-size: 4rem;
+      }
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .profSummary {
+    .title {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $font;
+      h5 {
+        color: $font;
+      }
+    }
+
+    .profDetails {
+      margin-bottom: 6rem;
+
+      p {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .workExp {
+    .workExp:nth-child(1) {
+      // color: red;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .compDetails {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .ionics {
+    margin-bottom: 6rem;
+  }
+
+  .education {
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 3.4rem;
+    }
+    .tip {
+    }
+
+    @include respond(tab) {
+      p {
+        font-size: 1.1rem;
+      }
+      .tip,
+      .ea {
+        h6 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    @include respond(phone) {
+      p {
+        font-size: 1rem;
+      }
+      .tip,
+      .ea {
+        h6 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    @include respond(phoneS) {
+      p {
+        font-size: 1rem;
+      }
+      .tip,
+      .ea {
+        h6 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  // @include respond(tab) {
+  //   .name {
+  //     padding-top: 2rem;
+  //     margin-bottom: 2.6rem;
+  //     font-size: 2rem;
+  //     h1 {
+  //       font-size: 3rem;
+  //     }
+  //     h3 {
+  //       font-size: 1.7rem;
+  //     }
+  //   }
+  //   .profSummary {
+  //     .profDetails {
+  //       p {
+  //         font-size: 1.2rem;
+  //       }
+  //     }
+  //   }
+
+  //   .compDetails {
+  //     p {
+  //       font-size: 1.2rem;
+  //     }
+  //     h6 {
+  //       font-size: 1.2rem;
+  //     }
+  //   }
+  // }
+  // @include respond(phone) {
+  //   .name {
+  //     padding-top: 4rem;
+  //     margin-bottom: 2.6rem;
+  //     font-size: 5rem;
+  //     h1 {
+  //       font-size: 2.4rem;
+  //     }
+  //     h3 {
+  //       font-size: 1.5rem;
+  //     }
+  //   }
+  //   .profSummary {
+  //     .profDetails {
+  //       p {
+  //         font-size: 1.1rem;
+  //       }
+  //     }
+  //   }
+
+  //   .compDetails {
+  //     p {
+  //       font-size: 1.1rem;
+  //     }
+  //     h6 {
+  //       font-size: 1.2rem;
+  //     }
+  //   }
+  // }
+}

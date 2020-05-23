@@ -1,0 +1,22 @@
+// $primary-color: rgb(55, 227, 233);
+$primary-color: #4fc3f7;
+$background: rgba(black, 0.9);
+$font: rgb(165, 170, 170);
+$fontR: rgb(47, 49, 49);
+
+.container {
+  margin-top: 2rem;
+  .row:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .row:first-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+h6 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}

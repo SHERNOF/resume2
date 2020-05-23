@@ -1,0 +1,102 @@
+.counters {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  margin-top: -2rem;
+  .title {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid $font;
+
+    h5 {
+      color: $font;
+    }
+  }
+  .stats-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    grid-gap: 1rem;
+
+    .statsBox {
+      display: grid;
+      justify-content: center;
+      margin-bottom: 2rem;
+      text-align: center;
+      line-height: 2;
+      transition: 0.5s;
+      // border: 1px solid red;
+      padding: 0 1rem;
+      padding-top: 2rem;
+      box-shadow: inset 0 0 60px rgba(138, 134, 134, 0.397);
+      background: #222;
+      border-radius: 1rem;
+
+      &:hover i {
+        cursor: pointer;
+        transform: scale(1.05);
+        color: $primary-color;
+        transform: scale(1.05);
+      }
+
+      & i {
+        text-align: center;
+        font-size: 3.5rem;
+        color: $font;
+        transition: 0.5s;
+      }
+
+      & .counter {
+        font-size: 1.2rem;
+        color: $primary-color;
+      }
+
+      & h3 {
+        font-size: 1.2rem;
+        color: $font;
+        margin-top: -0.1rem;
+      }
+    }
+  }
+
+  @include respond(tab) {
+    .title h5 {
+      font-size: 1.35rem;
+    }
+
+    .stats-icon .statsBox a i {
+      font-size: 2.5rem;
+    }
+    .stats-icon .statsBox h3 {
+      font-size: 1rem;
+    }
+  }
+  @include respond(phone) {
+    .title h5 {
+      font-size: 1.35rem;
+    }
+
+    .stats-icon .statsBox a i {
+      font-size: 2.5rem;
+    }
+    .stats-icon .statsBox h3 {
+      font-size: 1rem;
+    }
+  }
+
+  @include respond(phoneS) {
+    .title h5 {
+      font-size: 1.25rem;
+    }
+    .stats-icon .statsBox .counter {
+      font-size: 1.5rem;
+    }
+
+    .stats-icon .statsBox a i {
+      font-size: 4rem;
+    }
+    .stats-icon .statsBox h3 {
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,0 +1,162 @@
+#left {
+  padding: 0 0;
+  // background: $background;
+  background: linear-gradient(to bottom, $background, rgba(86, 86, 87, 0.507));
+  // min-height: 120rem;
+
+  .photoId {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    // height: 20rem;
+    width: auto;
+    margin-top: 5rem;
+
+    @include respond(tab) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+    }
+
+    img {
+      height: 14rem;
+      width: 14rem;
+      border: 0.5rem solid $primary-color;
+      border-radius: 50%;
+
+      @include respond(tab) {
+        height: 60%;
+        width: 60%;
+        border: 0.3rem solid $primary-color;
+        border-radius: 50%;
+      }
+
+      @include respond(phone) {
+        height: 20%;
+        width: 50%;
+        border: 0.3rem solid $primary-color;
+        border-radius: 50%;
+      }
+
+      @include respond(phoneS) {
+        height: 40%;
+        width: 50%;
+        border: 0.3rem solid $primary-color;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  //
+
+  .contact {
+    width: auto;
+    display: inline-block;
+    padding: 0 2rem;
+
+    .title {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid $font;
+
+      h5 {
+        color: $font;
+      }
+    }
+
+    .row {
+      margin-bottom: 0.5rem;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // height: 4rem;
+
+        & a i {
+          font-size: 1.2rem;
+        }
+
+        .test {
+          display: inline-block;
+          color: $font;
+          width: 3rem;
+          height: 3rem;
+          line-height: 2.4rem;
+          border-radius: 50%;
+          border: 0.2rem solid $primary-color;
+        }
+      }
+
+      .details {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+
+        h5 {
+          font-size: 1.3rem;
+          color: $font;
+        }
+
+        ul li {
+          display: inline;
+          margin-right: 2rem;
+          font-size: 2rem;
+          color: $font;
+        }
+      }
+    }
+  }
+
+  @include respond(phoneS) {
+    .contact {
+      padding: 1rem 1rem;
+      margin-top: 2rem;
+
+      .row:nth-child(3) .details h5 {
+        font-size: 0.5rem;
+        padding: 0;
+      }
+
+      .row:nth-child(5) .details {
+        padding: 0;
+        padding-bottom: 1rem;
+      }
+
+      .row .icon .test {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: -2rem;
+        line-height: 2.1rem;
+      }
+      .row .icon a i {
+        font-size: 0.8rem;
+      }
+      .title {
+        margin-bottom: 2.5rem;
+
+        h5 {
+          font-size: 1.3rem;
+        }
+      }
+      .row .details h5 {
+        font-size: 1.1rem;
+        position: relative;
+        margin-top: -1rem;
+        margin-left: -1.5rem;
+      }
+
+      .row .details i {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
