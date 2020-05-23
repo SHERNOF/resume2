@@ -288,6 +288,10 @@ h6 {
             text-align: center;
             overflow: hidden;
             transition: 0.5s; } }
+        @media (max-width: 25em) {
+          .skill .mainBox .container .card {
+            width: 15rem;
+            height: 15rem; } }
         .skill .mainBox .container .card:hover {
           transform: translateY(-1rem);
           box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5); }
@@ -320,7 +324,9 @@ h6 {
           @media (max-width: 25em) {
             .skill .mainBox .container .card .box .percent {
               box-shadow: none;
-              background: none; } }
+              background: none;
+              width: 10rem;
+              height: 10rem; } }
           @media (max-width: 37.5em) {
             .skill .mainBox .container .card .box .percent {
               box-shadow: none;
@@ -348,8 +354,7 @@ h6 {
               font-size: 0.8rem;
               color: #a5aaaa; }
           .skill .mainBox .container .card .box .percent svg {
-            width: 7rem;
-            height: 70rem; }
+            border: 1px solid red; }
             .skill .mainBox .container .card .box .percent svg circle {
               width: 100%;
               height: 100%;
@@ -358,6 +363,13 @@ h6 {
               stroke-linecap: square;
               stroke-width: 1;
               transform: translate(0.5rem, 0.5rem); }
+            @media (max-width: 25em) {
+              .skill .mainBox .container .card .box .percent svg {
+                width: 10rem;
+                height: 10rem;
+                cx: 27px; }
+                .skill .mainBox .container .card .box .percent svg circle {
+                  transform: translate(1.8rem, 1.8rem); } }
         .skill .mainBox .container .card:hover .percent .number h3 {
           color: #fff;
           font-size: 1rem; }
