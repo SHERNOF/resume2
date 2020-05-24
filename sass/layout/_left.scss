@@ -116,6 +116,94 @@
     }
   }
 
+  @include respond(tab) {
+    .contact {
+      padding: 1rem 1rem;
+      margin-top: 2rem;
+
+      .row:nth-child(3) .details h5 {
+        font-size: 0.5rem;
+        padding: 0;
+      }
+
+      .row:nth-child(5) .details {
+        padding: 0;
+        padding-bottom: 1rem;
+      }
+
+      .row .icon .test {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: -2rem;
+        line-height: 2.1rem;
+      }
+      .row .icon a i {
+        font-size: 0.8rem;
+      }
+      .title {
+        margin-bottom: 2.5rem;
+
+        h5 {
+          font-size: 1.3rem;
+        }
+      }
+      .row .details h5 {
+        font-size: 1.1rem;
+        position: relative;
+        margin-top: -1rem;
+        margin-left: -1.5rem;
+      }
+
+      .row .details i {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    .contact {
+      padding: 1rem 1rem;
+      margin-top: 2rem;
+
+      .row:nth-child(3) .details h5 {
+        font-size: 0.5rem;
+        padding: 0;
+      }
+
+      .row:nth-child(5) .details {
+        padding: 0;
+        padding-bottom: 1rem;
+      }
+
+      .row .icon .test {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: -2rem;
+        line-height: 2.1rem;
+      }
+      .row .icon a i {
+        font-size: 0.8rem;
+      }
+      .title {
+        margin-bottom: 2.5rem;
+
+        h5 {
+          font-size: 1.3rem;
+        }
+      }
+      .row .details h5 {
+        font-size: 1.1rem;
+        position: relative;
+        margin-top: -1rem;
+        margin-left: -1.5rem;
+      }
+
+      .row .details i {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
   @include respond(phoneS) {
     .contact {
       padding: 1rem 1rem;

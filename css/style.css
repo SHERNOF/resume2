@@ -137,6 +137,62 @@ h6 {
           margin-right: 2rem;
           font-size: 2rem;
           color: #a5aaaa; }
+  @media (max-width: 56.25em) {
+    #left .contact {
+      padding: 1rem 1rem;
+      margin-top: 2rem; }
+      #left .contact .row:nth-child(3) .details h5 {
+        font-size: 0.5rem;
+        padding: 0; }
+      #left .contact .row:nth-child(5) .details {
+        padding: 0;
+        padding-bottom: 1rem; }
+      #left .contact .row .icon .test {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: -2rem;
+        line-height: 2.1rem; }
+      #left .contact .row .icon a i {
+        font-size: 0.8rem; }
+      #left .contact .title {
+        margin-bottom: 2.5rem; }
+        #left .contact .title h5 {
+          font-size: 1.3rem; }
+      #left .contact .row .details h5 {
+        font-size: 1.1rem;
+        position: relative;
+        margin-top: -1rem;
+        margin-left: -1.5rem; }
+      #left .contact .row .details i {
+        font-size: 2.2rem; } }
+  @media (max-width: 37.5em) {
+    #left .contact {
+      padding: 1rem 1rem;
+      margin-top: 2rem; }
+      #left .contact .row:nth-child(3) .details h5 {
+        font-size: 0.5rem;
+        padding: 0; }
+      #left .contact .row:nth-child(5) .details {
+        padding: 0;
+        padding-bottom: 1rem; }
+      #left .contact .row .icon .test {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: -2rem;
+        line-height: 2.1rem; }
+      #left .contact .row .icon a i {
+        font-size: 0.8rem; }
+      #left .contact .title {
+        margin-bottom: 2.5rem; }
+        #left .contact .title h5 {
+          font-size: 1.3rem; }
+      #left .contact .row .details h5 {
+        font-size: 1.1rem;
+        position: relative;
+        margin-top: -1rem;
+        margin-left: -1.5rem; }
+      #left .contact .row .details i {
+        font-size: 2.2rem; } }
   @media (max-width: 25em) {
     #left .contact {
       padding: 1rem 1rem;
@@ -193,7 +249,7 @@ h6 {
           font-size: 2.5rem; } }
     @media (max-width: 25em) {
       #right .name {
-        height: 17.5rem; }
+        height: 19rem; }
         #right .name h1 {
           padding-top: 4rem;
           font-size: 4rem; }
@@ -268,10 +324,15 @@ h6 {
         .skill .mainBox .container {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          padding-left: 2rem; } }
+          padding-left: 0; } }
+      @media (max-width: 25em) {
+        .skill .mainBox .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding: 0; } }
       .skill .mainBox .container .card {
         position: relative;
-        width: 7rem;
+        width: 5rem;
         background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
         display: flex;
         justify-content: center;
@@ -281,6 +342,10 @@ h6 {
         text-align: center;
         overflow: hidden;
         transition: 0.5s; }
+        @media (max-width: 56.25em) {
+          .skill .mainBox .container .card {
+            width: 6rem;
+            height: 8rem; } }
         @media (max-width: 37.5em) {
           .skill .mainBox .container .card {
             width: 8rem;
@@ -290,8 +355,8 @@ h6 {
             transition: 0.5s; } }
         @media (max-width: 25em) {
           .skill .mainBox .container .card {
-            width: 15rem;
-            height: 15rem; } }
+            width: 10rem;
+            height: 14rem; } }
         .skill .mainBox .container .card:hover {
           transform: translateY(-1rem);
           box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5); }
@@ -337,14 +402,22 @@ h6 {
               background: none; } }
           .skill .mainBox .container .card .box .percent .number {
             position: absolute;
-            top: -7%;
+            top: -2%;
             line-height: 40;
-            left: -18%;
+            left: -10%;
             width: 125%;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%; }
+            @media (max-width: 56.25em) {
+              .skill .mainBox .container .card .box .percent .number {
+                left: -12%;
+                top: 6%; } }
+            @media (max-width: 25em) {
+              .skill .mainBox .container .card .box .percent .number {
+                left: -12%;
+                top: 22%; } }
           .skill .mainBox .container .card .box .percent h3 {
             font-size: 0.8rem;
             line-height: 2.5;
@@ -354,6 +427,9 @@ h6 {
               font-size: 0.8rem;
               color: #a5aaaa; }
           .skill .mainBox .container .card .box .percent svg {
+            position: absolute;
+            width: 7rem;
+            height: 7rem;
             border: 1px solid red; }
             .skill .mainBox .container .card .box .percent svg circle {
               width: 100%;
@@ -362,12 +438,17 @@ h6 {
               stroke: #191919;
               stroke-linecap: square;
               stroke-width: 1;
-              transform: translate(0.5rem, 0.5rem); }
+              transform: translate(1.8rem, 0.6rem); }
+            @media (max-width: 56.25em) {
+              .skill .mainBox .container .card .box .percent svg {
+                width: 10rem;
+                height: 10rem; }
+                .skill .mainBox .container .card .box .percent svg circle {
+                  transform: translate(3rem, 0.8rem); } }
             @media (max-width: 25em) {
               .skill .mainBox .container .card .box .percent svg {
                 width: 10rem;
-                height: 10rem;
-                cx: 27px; }
+                height: 10rem; }
                 .skill .mainBox .container .card .box .percent svg circle {
                   transform: translate(1.8rem, 1.8rem); } }
         .skill .mainBox .container .card:hover .percent .number h3 {
